@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lola — Briefing Diário</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;900&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --red: #8B1A1A;
@@ -123,6 +123,10 @@
   .loading { text-align: center; padding: 2rem; color: var(--muted); font-size: 13px; }
   .toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 13px; z-index: 999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
   .toast.show { opacity: 1; }
+
+  /* ===== Padronizacao tipografica (estilo Estoque) ===== */
+  body{font-family:'Nunito',sans-serif !important;}
+  .page-title,.topbar-logo,.card-title,[style*="Playfair"]{font-family:'Playfair Display',serif !important;font-weight:700 !important;font-style:normal !important;}
 </style>
 </head>
 <body>
